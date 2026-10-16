@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYLA Soluções Financeiras</title>
+    <!-- Tailwind CSS CDN para estilização moderna -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cylaDark: '#0B192C',
+                        cylaBlue: '#163172',
+                        cylaAccent: '#10B981',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="bg-cylaDark text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-extrabold tracking-wider text-cylaAccent">CYLA</span>
+                <span class="text-xs uppercase tracking-widest text-slate-300 border-l border-slate-600 pl-2">Soluções Financeiras</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#servicos" class="hover:text-cylaAccent transition">Servicos</a>
+                <a href="#sobre" class="hover:text-cylaAccent transition">Sobre Nós</a>
+                <a href="#calculadora" class="hover:text-cylaAccent transition">Simulador</a>
+                <a href="#contato" class="hover:text-cylaAccent transition">Contato</a>
+            </nav>
+            <a href="#contato" class="bg-cylaAccent text-slate-900 font-semibold px-4 py-2 rounded-lg text-sm hover:bg-emerald-400 transition shadow">
+                Simule Agora
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-cylaDark via-cylaBlue to-slate-900 text-white py-20 px-4">
+        <div class="max-w-5xl mx-auto text-center space-y-6">
+            <span class="bg-cylaAccent/10 text-cylaAccent text-xs font-bold uppercase px-3 py-1 rounded-full border border-cylaAccent/30">
+                @cylafinanceira
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+                Soluções Inteligentes para o seu <span class="text-cylaAccent">Crédito e Planejamento</span>
+            </h1>
+            <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto">
+                Consultoria especializada em crédito, renegociação de dívidas e planejamento financeiro pessoal sob medida para você alcançar estabilidade.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#calculadora" class="bg-cylaAccent text-slate-900 font-bold px-8 py-3 rounded-lg hover:bg-emerald-400 transition shadow-lg text-center">
+                    Simular Empréstimo
+                </a>
+                <a href="#servicos" class="bg-transparent border border-white/30 text-white font-semibold px-8 py-3 rounded-lg hover:bg-white/10 transition text-center">
+                    Conhecer Serviços
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center space-y-3 mb-16">
+            <h2 class="text-3xl font-bold text-cylaDark">Nossos Serviços e Linhas de Crédito</h2>
+            <p class="text-slate-600 max-w-xl mx-auto">Oferecemos portfólio completo com condições flexíveis alinhadas às suas necessidades.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-slate-100 space-y-4">
+                <div class="w-12 h-12 bg-cylaAccent/10 text-cylaAccent rounded-lg flex items-center justify-center font-bold text-xl">💳</div>
+                <h3 class="text-xl font-bold text-cylaDark">Empréstimo Pessoal</h3>
+                <p class="text-slate-600 text-sm">Crédito rápido e sem burocracia para auxiliar em imprevistos ou realizar projetos pessoais.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-slate-100 space-y-4">
+                <div class="w-12 h-12 bg-cylaAccent/10 text-cylaAccent rounded-lg flex items-center justify-center font-bold text-xl">📄</div>
+                <h3 class="text-xl font-bold text-cylaDark">Empréstimo Consignado</h3>
+                <p class="text-slate-600 text-sm">Taxas reduzidas e desconto direto em folha para servidores, aposentados e pensionistas.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-slate-100 space-y-4">
+                <div class="w-12 h-12 bg-cylaAccent/10 text-cylaAccent rounded-lg flex items-center justify-center font-bold text-xl">⚡</div>
+                <h3 class="text-xl font-bold text-cylaDark">Empréstimo na Conta de Energia</h3>
+                <p class="text-slate-600 text-sm">Praticidade com parcelas cobradas diretamente na sua fatura de luz, sem complicação.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-slate-100 space-y-4">
+                <div class="w-12 h-12 bg-cylaAccent/10 text-cylaAccent rounded-lg flex items-center justify-center font-bold text-xl">🏠</div>
+                <h3 class="text-xl font-bold text-cylaDark">Crédito com Garantia de Bens</h3>
+                <p class="text-slate-600 text-sm">Utilize seu imóvel ou veículo como garantia para obter taxas muito mais atrativas e prazos longos.</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-slate-100 space-y-4">
+                <div class="w-12 h-12 bg-cylaAccent/10 text-cylaAccent rounded-lg flex items-center justify-center font-bold text-xl">🏢</div>
+                <h3 class="text-xl font-bold text-cylaDark">Crédito Imobiliário</h3>
+                <p class="text-slate-600 text-sm">Assessoria completa para financiamento e aquisição da casa própria com segurança jurídica.</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-slate-100 space-y-4">
+                <div class="w-12 h-12 bg-cylaAccent/10 text-cylaAccent rounded-lg flex items-center justify-center font-bold text-xl">📈</div>
+                <h3 class="text-xl font-bold text-cylaDark">Planejamento Financeiro</h3>
+                <p class="text-slate-600 text-sm">Orientação em orçamento doméstico, renegociação de dívidas, investimentos e metas de longo prazo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulador Interativo -->
+    <section id="calculadora" class="bg-slate-100 py-20 px-4 border-y border-slate-200">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-md p-8 space-y-8">
+            <div class="text-center space-y-2">
+                <h2 class="text-2xl font-bold text-cylaDark">Simule sua Proposta de Crédito</h2>
+                <p class="text-slate-600 text-sm">Arraste os valores para estimar as condições do empréstimo</p>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-2">Valor Desejado: <span id="valorLabel" class="text-cylaBlue font-bold">R$ 10.000</span></label>
+                    <input type="range" id="inputValor" min="1000" max="50000" step="1000" value="10000" class="w-full accent-cylaAccent cursor-pointer">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-2">Prazo (Meses): <span id="mesesLabel" class="text-cylaBlue font-bold">24 meses</span></label>
+                    <input type="range" id="inputMeses" min="6" max="60" step="6" value="24" class="w-full accent-cylaAccent cursor-pointer">
+                </div>
+            </div>
+
+            <div class="bg-cylaDark text-white p-6 rounded-xl flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+                <div>
+                    <span class="text-slate-400 text-xs uppercase tracking-wider block">Parcela Estimada</span>
+                    <span id="resultadoParcela" class="text-3xl font-extrabold text-cylaAccent">R$ 520,00</span>
+                    <span class="text-slate-400 text-xs block mt-1">*Taxa indicativa sujeita a análise de crédito</span>
+                </div>
+                <a href="#contato" class="bg-cylaAccent text-slate-900 font-bold px-6 py-3 rounded-lg hover:bg-emerald-400 transition text-sm">
+                    Solicitar Análise
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato / Formulário -->
+    <section id="contato" class="py-20 px-4 max-w-4xl mx-auto">
+        <div class="text-center space-y-3 mb-12">
+            <h2 class="text-3xl font-bold text-cylaDark">Fale com um Consultor</h2>
+            <p class="text-slate-600">Preencha seus dados para conversarmos sobre suas opções financeiras.</p>
+        </div>
+
+        <form id="formContato" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
+            <div id="formFeedback" class="hidden p-4 rounded-lg bg-emerald-50 text-emerald-800 text-sm font-medium text-center">
+                Mensagem enviada com sucesso! Entraremos em contato em breve.
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Nome Completo</label>
+                    <input type="text" required class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-cylaAccent" placeholder="Seu nome">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Telefone / WhatsApp</label>
+                    <input type="tel" required class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-cylaAccent" placeholder="(00) 00000-0000">
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-1">Serviço de Interesse</label>
+                <select class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-cylaAccent bg-white">
+                    <option>Empréstimo Pessoal</option>
+                    <option>Empréstimo Consignado</option>
+                    <option>Empréstimo na Conta de Energia</option>
+                    <option>Empréstimo com Garantias de Bens</option>
+                    <option>Crédito Imobiliário</option>
+                    <option>Planejamento e Renegociação de Dívidas</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-1">Mensagem ou Detalhes</label>
+                <textarea rows="4" class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-cylaAccent" placeholder="Conte como podemos te ajudar..."></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-cylaDark text-white font-bold py-3 rounded-lg hover:bg-cylaBlue transition shadow">
+                Enviar Solicitação
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cylaDark text-slate-400 py-12 px-4 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div>
+                <span class="text-xl font-extrabold text-white">CYLA</span>
+                <p class="text-xs text-slate-500 mt-1">Soluções Financeiras &bull; Todos os direitos reservados</p>
+            </div>
+            <div class="text-sm space-x-6">
+                <a href="#servicos" class="hover:text-cylaAccent transition">Serviços</a>
+                <a href="#calculadora" class="hover:text-cylaAccent transition">Simulador</a>
+                <a href="#contato" class="hover:text-cylaAccent transition">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script da Calculadora e Formulário -->
+    <script>
+        const inputValor = document.getElementById('inputValor');
+        const inputMeses = document.getElementById('inputMeses');
+        const valorLabel = document.getElementById('valorLabel');
+        const mesesLabel = document.getElementById('mesesLabel');
+        const resultadoParcela = document.getElementById('resultadoParcela');
+        const formContato = document.getElementById('formContato');
+        const formFeedback = document.getElementById('formFeedback');
+
+        function atualizarSimulacao() {
+            const val = parseFloat(inputValor.value);
+            const meses = parseInt(inputMeses.value);
+            
+            valorLabel.textContent = val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+            mesesLabel.textContent = meses + ' meses';
+
+            // Juros compostos simulados simples (~2.5% ao mês)
+            const taxaMensal = 0.025;
+            const parcela = (val * taxaMensal * Math.pow(1 + taxaMensal, meses)) / (Math.pow(1 + taxaMensal, meses) - 1);
+            
+            resultadoParcela.textContent = parcela.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        }
+
+        inputValor.addEventListener('input', atualizarSimulacao);
+        inputMeses.addEventListener('input', atualizarSimulacao);
+        atualizarSimulacao();
+
+        formContato.addEventListener('submit', function(e) {
+            e.preventDefault();
+            formFeedback.classList.remove('hidden');
+            formContato.reset();
+            setTimeout(() => {
+                formFeedback.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
