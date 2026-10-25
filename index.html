@@ -48,18 +48,34 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-cylaGold via-cylaBlue to-slate-900 text-white py-20 px-4">
-        <div class="max-w-5xl mx-auto text-center space-y-6">
-            <span class="bg-cylaGold/20 text-cylaGold bg-white text-xs font-bold uppercase px-3 py-1 rounded-full border border-cylaGold/30">
+    <!-- Hero Section com Imagem de Fundo Borrada -->
+    <section class="relative bg-slate-900 text-white py-20 px-4 overflow-hidden">
+        
+        <!-- Imagem de fundo com desfoque (blur) e overlay escuro para manter a legibilidade -->
+        <div class="absolute inset-0 z-0">
+            <img 
+                src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&q=80&w=1600" 
+                alt="Fundo Financeiro" 
+                class="w-full h-full object-cover blur-sm scale-105 opacity-30"
+            />
+            <div class="absolute inset-0 bg-gradient-to-br from-cylaGold/70 via-cylaBlue/80 to-slate-900/90 mix-blend-multiply"></div>
+        </div>
+
+        <!-- Conteúdo do Hero -->
+        <div class="relative z-10 max-w-5xl mx-auto text-center space-y-6">
+            <span class="inline-block bg-white/10 backdrop-blur-md text-cylaGold bg-white text-xs font-bold uppercase px-3 py-1 rounded-full border border-cylaGold/30">
                 @cylafinanceira
             </span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
-                Soluções Inteligentes para o seu <span class="text-cylaGold">Crédito e Planejamento</span>
-            </h1>
-            <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto">
-                Consultoria especializada em crédito, renegociação de dívidas e planejamento financeiro pessoal sob medida para você alcançar estabilidade.
-            </p>
+            
+            <div class="p-6 md:p-10 rounded-2xl bg-black/20 backdrop-blur-md border border-white/10 shadow-2xl">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight drop-shadow-md">
+                    Soluções Inteligentes para o seu <span class="text-cylaGold">Crédito e Planejamento</span>
+                </h1>
+                <p class="text-slate-200 text-lg md:text-xl max-w-2xl mx-auto mt-6 drop-shadow">
+                    Consultoria especializada em crédito, renegociação de dívidas e planejamento financeiro pessoal sob medida para você alcançar estabilidade.
+                </p>
+            </div>
+
             <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#calculadora" class="bg-cylaGold text-white font-bold px-8 py-3 rounded-lg hover:opacity-90 transition shadow-lg text-center">
                     Simular Empréstimo
