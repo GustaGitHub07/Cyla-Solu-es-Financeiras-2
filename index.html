@@ -218,24 +218,20 @@
     <section id="contato" class="py-20 px-4 max-w-4xl mx-auto">
         <div class="text-center space-y-4 mb-12">
             <h2 class="text-3xl font-bold text-cylaGold">Fale com um Consultor</h2>
-            <p class="text-slate-600">Preencha seus dados para conversarmos sobre suas opções financeiras ou escolha um canal direto abaixo:</p>
+            <p class="text-slate-600">Preencha seus dados para conversarmos sobre suas opções financeiras ou escolha um canal direto:</p>
             
-            <!-- Canais Diretos (WhatsApp e E-mail) -->
+            <!-- Atalhos para contato direto -->
             <div class="flex flex-wrap justify-center gap-4 pt-2">
-                <a href="https://wa.me/5511945306082?text=Olá,%20gostaria%20de%20falar%20com%20um%20consultor%20sobre%20opções%20financeiras." 
+                <a href="https://wa.me/5511945306082?text=Olá,%20gostaria%20de%20falar%20com%20um%20consultor." 
                    target="_blank" 
                    rel="noopener noreferrer" 
                    class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-5 py-2.5 rounded-lg transition text-sm shadow-sm">
-                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
-                    </svg>
-                    (11) 94530-6082 (WhatsApp)
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                    (11) 94530-6082
                 </a>
                 <a href="mailto:gustavopereiramenez@gmail.com?subject=Contato%20via%20Site" 
                    class="inline-flex items-center gap-2 bg-slate-200 hover:bg-slate-300 text-slate-800 font-semibold px-5 py-2.5 rounded-lg transition text-sm shadow-sm">
-                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 6.013-9.518-6.013h19.036zm-19.518 14v-11.775l10 6.321 10-6.321v11.775h-20z"/>
-                    </svg>
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 6.013-9.518-6.013h19.036zm-19.518 14v-11.775l10 6.321 10-6.321v11.775h-20z"/></svg>
                     gustavopereiramenez@gmail.com
                 </a>
             </div>
@@ -243,23 +239,23 @@
 
         <form id="formContato" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
             <div id="formFeedback" class="hidden p-4 rounded-lg bg-emerald-50 text-emerald-800 text-sm font-medium text-center">
-                Mensagem enviada com sucesso! Entraremos em contato em breve.
+                Mensagem enviada com sucesso! Redirecionando para o WhatsApp e E-mail...
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                     <label class="block text-sm font-semibold text-slate-700 mb-1">Nome Completo</label>
-                    <input type="text" required class="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-900 bg-white focus:outline-none focus:border-cylaGold focus:ring-1 focus:ring-cylaGold" placeholder="Seu nome">
+                    <input type="text" id="nomeCliente" required class="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-900 bg-white focus:outline-none focus:border-cylaGold focus:ring-1 focus:ring-cylaGold" placeholder="Seu nome">
                 </div>
                 <div>
                     <label class="block text-sm font-semibold text-slate-700 mb-1">Telefone / WhatsApp</label>
-                    <input type="tel" required class="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-900 bg-white focus:outline-none focus:border-cylaGold focus:ring-1 focus:ring-cylaGold" placeholder="(00) 00000-0000">
+                    <input type="tel" id="telefoneCliente" required class="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-900 bg-white focus:outline-none focus:border-cylaGold focus:ring-1 focus:ring-cylaGold" placeholder="(00) 00000-0000">
                 </div>
             </div>
 
             <div>
                 <label class="block text-sm font-semibold text-slate-700 mb-1">Serviço de Interesse</label>
-                <select class="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-900 font-medium bg-white focus:outline-none focus:border-cylaGold focus:ring-1 focus:ring-cylaGold cursor-pointer shadow-sm">
+                <select id="servicoCliente" class="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-900 font-medium bg-white focus:outline-none focus:border-cylaGold focus:ring-1 focus:ring-cylaGold cursor-pointer shadow-sm">
                     <option value="" disabled selected class="text-slate-400">Selecione o serviço desejado...</option>
                     <option class="text-slate-900 py-1">Empréstimo Pessoal</option>
                     <option class="text-slate-900 py-1">Empréstimo Consignado</option>
@@ -272,7 +268,7 @@
 
             <div>
                 <label class="block text-sm font-semibold text-slate-700 mb-1">Mensagem ou Detalhes</label>
-                <textarea rows="4" class="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-900 bg-white focus:outline-none focus:border-cylaGold focus:ring-1 focus:ring-cylaGold" placeholder="Conte como podemos te ajudar..."></textarea>
+                <textarea id="mensagemCliente" rows="4" class="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-900 bg-white focus:outline-none focus:border-cylaGold focus:ring-1 focus:ring-cylaGold" placeholder="Conte como podemos te ajudar..."></textarea>
             </div>
 
             <button type="submit" class="w-full bg-cylaGold text-white font-bold py-3 rounded-lg hover:opacity-90 transition shadow">
@@ -280,6 +276,41 @@
             </button>
         </form>
     </section>
+
+    <!-- Script para envio automático para WhatsApp e E-mail -->
+    <script>
+        document.getElementById('formContato').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Coleta os valores dos campos
+            const nome = document.getElementById('nomeCliente').value;
+            const telefone = document.getElementById('telefoneCliente').value;
+            const servico = document.getElementById('servicoCliente').value || "Não especificado";
+            const detalhes = document.getElementById('mensagemCliente').value || "Nenhum detalhe adicional";
+
+            // Mostra o feedback visual na tela
+            const feedback = document.getElementById('formFeedback');
+            feedback.classList.remove('hidden');
+
+            // Formata a mensagem para o WhatsApp
+            const textoWhatsApp = `Olá! Gostaria de solicitar uma análise.%0A%0A*Nome:* ${encodeURIComponent(nome)}%0A*Telefone:* ${encodeURIComponent(telefone)}%0A*Serviço:* ${encodeURIComponent(servico)}%0A*Detalhes:* ${encodeURIComponent(detalhes)}`;
+            const numeroWhatsApp = "5511945306082";
+            
+            // Monta o link do E-mail
+            const emailDestino = "gustavopereiramenez@gmail.com";
+            const assuntoEmail = encodeURIComponent(`Nova Solicitação de Contato - ${nome}`);
+            const corpoEmail = encodeURIComponent(`Nome: ${nome}\nTelefone: ${telefone}\nServiço de Interesse: ${servico}\nDetalhes: ${detalhes}`);
+            const linkEmail = `mailto:${emailDestino}?subject=${assuntoEmail}&body=${corpoEmail}`;
+
+            // Abre o e-mail em segundo plano / nova aba
+            window.location.href = linkEmail;
+
+            // Após um breve instante, abre o WhatsApp com a mensagem pronta
+            setTimeout(() => {
+                window.open(`https://wa.me/${numeroWhatsApp}?text=${textoWhatsApp}`, '_blank');
+            }, 1000);
+        });
+    </script>
     
     <!-- Footer -->
     <footer class="bg-cylaGold text-white py-10 px-4 shadow-lg">
