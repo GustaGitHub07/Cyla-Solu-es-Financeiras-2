@@ -26,8 +26,13 @@
     <header class="bg-white text-cylaGold sticky top-0 z-50 shadow-md">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <!-- Imagem da Logo CYLA sem Fundo Branco -->
-                <img src="logo cyla moeda.png" alt="Logo CYLA Moeda" class="w-10 h-10 object-contain mix-blend-multiply">
+                <!-- Logo da Moeda em SVG Integrado -->
+                <svg class="w-9 h-9 text-cylaGold" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 15 C30 15 15 30 15 50 C15 70 30 85 50 85 C65 85 78 75 83 60 C80 62 75 63 70 62 C62 70 50 73 38 68 C26 63 20 48 25 36 C30 24 45 18 58 23 C68 27 75 37 75 48 C75 50 78 50 80 48 C85 48 88 43 85 35 C78 22 65 15 50 15 Z" fill="currentColor"/>
+                    <circle cx="50" cy="50" r="12" fill="currentColor"/>
+                    <ellipse cx="50" cy="80" rx="30" ry="8" stroke="currentColor" stroke-width="4" fill="none"/>
+                    <ellipse cx="50" cy="88" rx="22" ry="5" stroke="currentColor" stroke-width="3" fill="none"/>
+                </svg>
                 <span class="text-2xl font-extrabold tracking-wider text-cylaGold">CYLA</span>
                 <span class="text-xs uppercase tracking-widest text-cylaGold/80 border-l border-cylaGold/40 pl-2">Soluções Financeiras</span>
             </div>
@@ -43,25 +48,16 @@
         </div>
     </header>
 
-    <!-- Hero Section com Imagem de Fundo Borrada -->
+    <!-- Hero Section -->
     <section class="relative bg-slate-900 text-white py-20 px-4 overflow-hidden">
-        
-        <!-- Imagem de fundo com desfoque (blur) e overlay escuro para manter a legibilidade -->
         <div class="absolute inset-0 z-0">
-            <img 
-                src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&q=80&w=1600" 
-                alt="Fundo Financeiro" 
-                class="w-full h-full object-cover blur-sm scale-105 opacity-30"
-            />
+            <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&q=80&w=1600" alt="Fundo Financeiro" class="w-full h-full object-cover blur-sm scale-105 opacity-30"/>
             <div class="absolute inset-0 bg-gradient-to-br from-cylaGold/70 via-cylaBlue/80 to-slate-900/90 mix-blend-multiply"></div>
         </div>
-
-        <!-- Conteúdo do Hero -->
         <div class="relative z-10 max-w-5xl mx-auto text-center space-y-6">
-            <span class="inline-block bg-white/10 backdrop-blur-md text-cylaGold bg-white text-xs font-bold uppercase px-3 py-1 rounded-full border border-cylaGold/30">
+            <span class="inline-block bg-white/10 backdrop-blur-md text-cylaGold text-xs font-bold uppercase px-3 py-1 rounded-full border border-cylaGold/30">
                 @cylafinanceira
             </span>
-            
             <div class="p-6 md:p-10 rounded-2xl bg-black/20 backdrop-blur-md border border-white/10 shadow-2xl">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight drop-shadow-md">
                     Soluções Inteligentes para o seu <span class="text-cylaGold">Crédito e Planejamento</span>
@@ -70,7 +66,6 @@
                     Consultoria especializada em crédito, renegociação de dívidas e planejamento financeiro pessoal sob medida para você alcançar estabilidade.
                 </p>
             </div>
-
             <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#calculadora" class="bg-cylaGold text-white font-bold px-8 py-3 rounded-lg hover:opacity-90 transition shadow-lg text-center">
                     Simular Empréstimo
@@ -98,18 +93,7 @@
                 <p class="text-slate-600 leading-relaxed">
                     Nosso portfólio completo conta com condições flexíveis e taxas competitivas, garantindo um processo simples, transparente e rápido para você expandir seus negócios, realizar projetos ou alcançar a tranquilidade que você e sua família merecem.
                 </p>
-                <div class="pt-2 flex items-center space-x-6">
-                    <div>
-                        <span class="block text-2xl font-extrabold text-cylaGold">7 Anos</span>
-                        <span class="text-xs text-slate-500 uppercase tracking-wider">de Experiência</span>
-                    </div>
-                    <div class="border-l border-slate-200 pl-6">
-                        <span class="block text-2xl font-extrabold text-cylaGold">100%</span>
-                        <span class="text-xs text-slate-500 uppercase tracking-wider">Foco no Cliente</span>
-                    </div>
-                </div>
             </div>
-            
             <div class="relative">
                 <div class="absolute inset-0 bg-cylaGold/10 rounded-2xl transform rotate-3"></div>
                 <div class="relative bg-white p-8 rounded-2xl shadow-md border border-slate-100 space-y-6">
@@ -139,39 +123,32 @@
             <h2 class="text-3xl font-bold text-cylaGold">Nossos Serviços e Linhas de Crédito</h2>
             <p class="text-slate-600 max-w-xl mx-auto">Oferecemos portfólio completo com condições flexíveis alinhadas às suas necessidades.</p>
         </div>
-
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Card 1 -->
             <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-slate-100 space-y-4">
                 <div class="w-12 h-12 bg-cylaGold/10 text-cylaGold rounded-lg flex items-center justify-center font-bold text-xl">💳</div>
                 <h3 class="text-xl font-bold text-cylaGold">Empréstimo Pessoal</h3>
                 <p class="text-slate-600 text-sm">Crédito rápido e sem burocracia para auxiliar em imprevistos ou realizar projetos pessoais.</p>
             </div>
-            <!-- Card 2 -->
             <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-slate-100 space-y-4">
                 <div class="w-12 h-12 bg-cylaGold/10 text-cylaGold rounded-lg flex items-center justify-center font-bold text-xl">📄</div>
                 <h3 class="text-xl font-bold text-cylaGold">Empréstimo Consignado</h3>
                 <p class="text-slate-600 text-sm">Taxas reduzidas e desconto direto em folha para servidores, aposentados e pensionistas.</p>
             </div>
-            <!-- Card 3 -->
             <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-slate-100 space-y-4">
                 <div class="w-12 h-12 bg-cylaGold/10 text-cylaGold rounded-lg flex items-center justify-center font-bold text-xl">⚡</div>
                 <h3 class="text-xl font-bold text-cylaGold">Empréstimo na Conta de Energia</h3>
                 <p class="text-slate-600 text-sm">Praticidade com parcelas cobradas diretamente na sua fatura de luz, sem complicação.</p>
             </div>
-            <!-- Card 4 -->
             <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-slate-100 space-y-4">
                 <div class="w-12 h-12 bg-cylaGold/10 text-cylaGold rounded-lg flex items-center justify-center font-bold text-xl">🏠</div>
                 <h3 class="text-xl font-bold text-cylaGold">Crédito com Garantia de Bens</h3>
                 <p class="text-slate-600 text-sm">Utilize seu imóvel ou veículo como garantia para obter taxas muito mais atrativas e prazos longos.</p>
             </div>
-            <!-- Card 5 -->
             <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-slate-100 space-y-4">
                 <div class="w-12 h-12 bg-cylaGold/10 text-cylaGold rounded-lg flex items-center justify-center font-bold text-xl">🏢</div>
                 <h3 class="text-xl font-bold text-cylaGold">Crédito Imobiliário</h3>
                 <p class="text-slate-600 text-sm">Assessoria completa para financiamento e aquisição da casa própria com segurança jurídica.</p>
             </div>
-            <!-- Card 6 -->
             <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-slate-100 space-y-4">
                 <div class="w-12 h-12 bg-cylaGold/10 text-cylaGold rounded-lg flex items-center justify-center font-bold text-xl">📈</div>
                 <h3 class="text-xl font-bold text-cylaGold">Planejamento Financeiro</h3>
@@ -187,20 +164,16 @@
                 <h2 class="text-2xl font-bold text-cylaGold">Simule sua Proposta de Crédito</h2>
                 <p class="text-slate-600 text-sm">Arraste os valores para estimar as condições do empréstimo</p>
             </div>
-
             <div class="space-y-6">
                 <div>
                     <label class="block text-sm font-semibold text-slate-700 mb-2">Valor Desejado: <span id="valorLabel" class="text-cylaGold font-bold">R$ 10.000</span></label>
                     <input type="range" id="inputValor" min="1000" max="50000" step="1000" value="10000" class="w-full accent-cylaGold cursor-pointer">
                 </div>
-
                 <div>
                     <label class="block text-sm font-semibold text-slate-700 mb-2">Prazo (Meses): <span id="mesesLabel" class="text-cylaGold font-bold">24 meses</span></label>
                     <input type="range" id="inputMeses" min="6" max="60" step="6" value="24" class="w-full accent-cylaGold cursor-pointer">
                 </div>
             </div>
-
-            <!-- Card de Destaque do Resultado -->
             <div class="bg-cylaGold text-white p-6 rounded-xl flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
                 <div>
                     <span class="text-white/80 text-xs uppercase tracking-wider block">Parcela Estimada</span>
@@ -220,12 +193,10 @@
             <h2 class="text-3xl font-bold text-cylaGold">Fale com um Consultor</h2>
             <p class="text-slate-600">Preencha seus dados para conversarmos sobre suas opções financeiras.</p>
         </div>
-
         <form id="formContato" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
             <div id="formFeedback" class="hidden p-4 rounded-lg bg-emerald-50 text-emerald-800 text-sm font-medium text-center">
                 Mensagem enviada com sucesso! Entraremos em contato em breve.
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                     <label class="block text-sm font-semibold text-slate-700 mb-1">Nome Completo</label>
@@ -236,7 +207,6 @@
                     <input type="tel" required class="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-900 bg-white focus:outline-none focus:border-cylaGold focus:ring-1 focus:ring-cylaGold" placeholder="(00) 00000-0000">
                 </div>
             </div>
-
             <div>
                 <label class="block text-sm font-semibold text-slate-700 mb-1">Serviço de Interesse</label>
                 <select class="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-900 font-medium bg-white focus:outline-none focus:border-cylaGold focus:ring-1 focus:ring-cylaGold cursor-pointer shadow-sm">
@@ -249,12 +219,10 @@
                     <option class="text-slate-900 py-1">Planejamento e Renegociação de Dívidas</option>
                 </select>
             </div>
-
             <div>
                 <label class="block text-sm font-semibold text-slate-700 mb-1">Mensagem ou Detalhes</label>
                 <textarea rows="4" class="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-900 bg-white focus:outline-none focus:border-cylaGold focus:ring-1 focus:ring-cylaGold" placeholder="Conte como podemos te ajudar..."></textarea>
             </div>
-
             <button type="submit" class="w-full bg-cylaGold text-white font-bold py-3 rounded-lg hover:opacity-90 transition shadow">
                 Enviar Solicitação
             </button>
@@ -266,8 +234,12 @@
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
             <div>
                 <div class="flex items-center justify-center md:justify-start space-x-2 mb-1">
-                    <!-- Imagem da Logo CYLA no Rodapé -->
-                    <img src="logo cyla moeda.png" alt="Logo CYLA Moeda" class="w-8 h-8 object-contain brightness-0 invert">
+                    <svg class="w-6 h-6 text-white" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 15 C30 15 15 30 15 50 C15 70 30 85 50 85 C65 85 78 75 83 60 C80 62 75 63 70 62 C62 70 50 73 38 68 C26 63 20 48 25 36 C30 24 45 18 58 23 C68 27 75 37 75 48 C75 50 78 50 80 48 C85 48 88 43 85 35 C78 22 65 15 50 15 Z" fill="currentColor"/>
+                        <circle cx="50" cy="50" r="12" fill="currentColor"/>
+                        <ellipse cx="50" cy="80" rx="30" ry="8" stroke="currentColor" stroke-width="4" fill="none"/>
+                        <ellipse cx="50" cy="88" rx="22" ry="5" stroke="currentColor" stroke-width="3" fill="none"/>
+                    </svg>
                     <span class="text-xl font-extrabold text-white tracking-wider">CYLA</span>
                 </div>
                 <p class="text-xs text-white/80">Soluções Financeiras &bull; Todos os direitos reservados</p>
@@ -297,7 +269,6 @@
             valorLabel.textContent = val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
             mesesLabel.textContent = meses + ' meses';
 
-            // Juros compostos simulados simples (~2.5% ao mês)
             const taxaMensal = 0.025;
             const parcela = (val * taxaMensal * Math.pow(1 + taxaMensal, meses)) / (Math.pow(1 + taxaMensal, meses) - 1);
             
